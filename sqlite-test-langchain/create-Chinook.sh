@@ -1,8 +1,5 @@
-wget https://raw.githubusercontent.com/lerocha/chinook-database/master/ChinookDatabase/DataSources/Chinook_Sqlite.sql
+wget https://www.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip
+unzip chinook.zip
+mv chinook.db Chinook.db
 
-sqlite3 Chinook.db
->.read Chinook_Sqlite.sql
->SELECT * FROM Artist LIMIT 10;
-
-CTRL-D to exit
-
+python3 test.py
